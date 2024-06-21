@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{A58E30EC-3D03-4873-B848-FA8E5877D2AA}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AltoHttp</RootNamespace>
+    <AssemblyName>AltoHttp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\AltoHttp.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>xCheatsSign.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AfterGettingResponseEventArgs.cs" />
+    <Compile Include="BeforeSendingRequestEventArgs.cs" />
+    <Compile Include="BrowserIntegration\Chrome\AllInOneIntegrator.cs" />
+    <Compile Include="BrowserIntegration\Chrome\Constants.cs" />
+    <Compile Include="BrowserIntegration\Chrome\HostExtensionIntegration.cs" />
+    <Compile Include="BrowserIntegration\Chrome\NativeMessageHost.cs" />
+    <Compile Include="BrowserIntegration\Chrome\RegistryExtensionIntegrator.cs" />
+    <Compile Include="DownloadQueue.cs" />
+    <Compile Include="EventHelper.cs" />
+    <Compile Include="Exceptions\ContentSizeIsUnknownForRangeRequest.cs" />
+    <Compile Include="Exceptions\FileValidationFailedException.cs" />
+    <Compile Include="Exceptions\NegativeRangeStartOffsetException.cs" />
+    <Compile Include="Exceptions\RangeEndOffsetGreaterThanContentSizeException.cs" />
+    <Compile Include="Exceptions\ResumeDownloadNotSupportedException.cs" />
+    <Compile Include="Exceptions\ResumeNotSupportedForRangeRequest.cs" />
+    <Compile Include="Exceptions\WrongContentSizeReturnedException.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="FileNameHelper.cs" />
+    <Compile Include="GlobalSettings.cs" />
+    <Compile Include="HttpDownloader.cs" />
+    <Compile Include="HttpHeaderHelper.cs" />
+    <Compile Include="IQueue.cs" />
+    <Compile Include="NativeMessaging\DownloadMessage.cs" />
+    <Compile Include="NativeMessaging\Header.cs" />
+    <Compile Include="NativeMessaging\Receiver.cs" />
+    <Compile Include="ProgressChangedEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueElement.cs" />
+    <Compile Include="QueueElementCompletedEventArgs.cs" />
+    <Compile Include="Exceptions\RangeStartOffsetGreaterThanContentSizeException.cs" />
+    <Compile Include="RemoteFileInfo.cs" />
+    <Compile Include="RequestHelper.cs" />
+    <Compile Include="SizeHelper.cs" />
+    <Compile Include="SizeUnit.cs" />
+    <Compile Include="StateChangedEventArgs.cs" />
+    <Compile Include="Status.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="xCheatsSign.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
