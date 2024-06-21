@@ -1,0 +1,13 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+/DovahkiinLounge.Functions/obj
+/DovahkiinLounge.Lang/obj
+/DovahkiinLounge.Memory/obj
+/Updater/obj
+/xCheats/obj
+/xCheats Launcher/obj
+/.vs
+/AltoHttp/obj
+/AltoHttp/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs

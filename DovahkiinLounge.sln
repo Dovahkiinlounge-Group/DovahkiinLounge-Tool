@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xCheats", "xCheats\xCheats.csproj", "{784574E9-5C73-4E74-969B-DF53BDE923D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DovahkiinLounge", "xCheats\DovahkiinLounge.csproj", "{784574E9-5C73-4E74-969B-DF53BDE923D2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6AA6B1A9-F574-43D9-B1EE-F28DA222A030} = {6AA6B1A9-F574-43D9-B1EE-F28DA222A030}
 		{D17A4D48-287E-4B71-B5B3-A37BD440227F} = {D17A4D48-287E-4B71-B5B3-A37BD440227F}
@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xCheats", "xCheats\xCheats.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltoHttp", "AltoHttp\AltoHttp.csproj", "{A58E30EC-3D03-4873-B848-FA8E5877D2AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xCheats Launcher", "xCheats Launcher\xCheats Launcher.csproj", "{6AA6B1A9-F574-43D9-B1EE-F28DA222A030}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DovahkiinLounge Launcher", "xCheats Launcher\DovahkiinLounge Launcher.csproj", "{6AA6B1A9-F574-43D9-B1EE-F28DA222A030}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DovahkiinLounge.Memory", "DovahkiinLounge.Memory\DovahkiinLounge.Memory.csproj", "{A906AA4E-279B-4AFA-B9CC-B622582E21B1}"
 	ProjectSection(ProjectDependencies) = postProject
