@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DovahkiinLounge.Functions\DovahkiinLounge.Functions.csproj" />
-    <ProjectReference Include="..\xCheats\DovahkiinLounge.csproj" />
   </ItemGroup>
 
   <ItemGroup>

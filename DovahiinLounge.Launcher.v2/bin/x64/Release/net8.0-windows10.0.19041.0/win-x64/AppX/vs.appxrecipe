@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ABYSS-SYNDICATE</Machine>
+    <WindowsUser>renee</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>f953edcc-0971-4b4b-94a6-e1614739f730</PackageIdentityName>
+    <PackageIdentityPublisher>CN=renee</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
+    <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>D:\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
+    <RegisteredManifestChecksum>C3DDD6C285DF3DFFCD18CE16769780E88028D5804BB2B743882843CBB557829B</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>f953edcc-0971-4b4b-94a6-e1614739f730_1.0.0.0_x64__dpcc3ttm1y6hc</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>f953edcc-0971-4b4b-94a6-e1614739f730_dpcc3ttm1y6hc!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>f953edcc-0971-4b4b-94a6-e1614739f730</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=renee</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2024-08-15T02:51:19.301</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2024-08-15T02:51:09.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\DovahiinLounge.Launcher.v2.runtimeconfig.json">
+      <PackagePath>DovahiinLounge.Launcher.v2.runtimeconfig.json</PackagePath>
+      <Modified>2024-08-15T02:51:08.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
+      <PackagePath>DovahiinLounge.Launcher.v2.exe</PackagePath>
+      <Modified>2024-08-15T02:51:04.661</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\Microsoft.DiaSymReader.Native.amd64.dll">
+      <PackagePath>Microsoft.DiaSymReader.Native.amd64.dll</PackagePath>
+      <Modified>2024-04-27T23:20:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\System.IO.Compression.Native.dll">
+      <PackagePath>System.IO.Compression.Native.dll</PackagePath>
+      <Modified>2024-07-16T18:24:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\clretwrc.dll">
+      <PackagePath>clretwrc.dll</PackagePath>
+      <Modified>2024-07-16T18:10:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\clrgc.dll">
+      <PackagePath>clrgc.dll</PackagePath>
+      <Modified>2024-07-16T18:06:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\clrjit.dll">
+      <PackagePath>clrjit.dll</PackagePath>
+      <Modified>2024-07-16T18:07:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\coreclr.dll">
+      <PackagePath>coreclr.dll</PackagePath>
+      <Modified>2024-07-16T18:12:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\createdump.exe">
+      <PackagePath>createdump.exe</PackagePath>
+      <Modified>2024-07-16T18:10:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\hostfxr.dll">
+      <PackagePath>hostfxr.dll</PackagePath>
+      <Modified>2024-07-16T18:22:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\hostpolicy.dll">
+      <PackagePath>hostpolicy.dll</PackagePath>
+      <Modified>2024-07-16T18:23:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\mscordaccore.dll">
+      <PackagePath>mscordaccore.dll</PackagePath>
+      <Modified>2024-07-16T18:16:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\mscordaccore_amd64_amd64_8.0.824.36612.dll">
+      <PackagePath>mscordaccore_amd64_amd64_8.0.824.36612.dll</PackagePath>
+      <Modified>2024-07-16T18:16:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\mscordbi.dll">
+      <PackagePath>mscordbi.dll</PackagePath>
+      <Modified>2024-07-16T18:16:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\mscorrc.dll">
+      <PackagePath>mscorrc.dll</PackagePath>
+      <Modified>2024-07-16T18:11:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\native\msquic.dll">
+      <PackagePath>msquic.dll</PackagePath>
+      <Modified>2024-03-12T16:41:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\runtimes\win-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+      <Modified>2024-06-25T19:48:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\linked\System.ComponentModel.dll">
+      <PackagePath>System.ComponentModel.dll</PackagePath>
+      <Modified>2024-08-15T02:51:15.376</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\Microsoft.InteractiveExperiences.Projection.dll">
+      <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
+      <Modified>2024-08-15T02:51:16.825</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\Microsoft.WinUI.dll">
+      <PackagePath>Microsoft.WinUI.dll</PackagePath>
+      <Modified>2024-08-15T02:51:16.897</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\DovahiinLounge.Launcher.v2.dll">
+      <PackagePath>DovahiinLounge.Launcher.v2.dll</PackagePath>
+      <Modified>2024-08-15T02:51:16.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Collections.Concurrent.dll">
+      <PackagePath>System.Collections.Concurrent.dll</PackagePath>
+      <Modified>2024-08-15T02:51:17.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Collections.Immutable.dll">
+      <PackagePath>System.Collections.Immutable.dll</PackagePath>
+      <Modified>2024-08-15T02:51:17.084</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Collections.dll">
+      <PackagePath>System.Collections.dll</PackagePath>
+      <Modified>2024-08-15T02:51:17.147</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Diagnostics.StackTrace.dll">
+      <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
+      <Modified>2024-08-15T02:51:17.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.IO.Compression.dll">
+      <PackagePath>System.IO.Compression.dll</PackagePath>
+      <Modified>2024-08-15T02:51:17.274</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.IO.MemoryMappedFiles.dll">
+      <PackagePath>System.IO.MemoryMappedFiles.dll</PackagePath>
+      <Modified>2024-08-15T02:51:17.339</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Linq.Expressions.dll">
+      <PackagePath>System.Linq.Expressions.dll</PackagePath>
+      <Modified>2024-08-15T02:51:17.397</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Linq.dll">
+      <PackagePath>System.Linq.dll</PackagePath>
+      <Modified>2024-08-15T02:51:17.460</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.ObjectModel.dll">
+      <PackagePath>System.ObjectModel.dll</PackagePath>
+      <Modified>2024-08-15T02:51:17.517</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Private.CoreLib.dll">
+      <PackagePath>System.Private.CoreLib.dll</PackagePath>
+      <Modified>2024-08-15T02:51:18.495</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Private.Uri.dll">
+      <PackagePath>System.Private.Uri.dll</PackagePath>
+      <Modified>2024-08-15T02:51:18.594</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Reflection.Metadata.dll">
+      <PackagePath>System.Reflection.Metadata.dll</PackagePath>
+      <Modified>2024-08-15T02:51:18.677</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\System.Security.Cryptography.dll">
+      <PackagePath>System.Security.Cryptography.dll</PackagePath>
+      <Modified>2024-08-15T02:51:18.738</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\Microsoft.Windows.SDK.NET.dll">
+      <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
+      <Modified>2024-08-15T02:51:18.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\R2R\WinRT.Runtime.dll">
+      <PackagePath>WinRT.Runtime.dll</PackagePath>
+      <Modified>2024-08-15T02:51:19.115</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\DovahiinLounge.Launcher.v2.deps.json">
+      <PackagePath>DovahiinLounge.Launcher.v2.deps.json</PackagePath>
+      <Modified>2024-08-15T02:51:19.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2024-08-14T23:09:25.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <Modified>2024-08-14T23:09:25.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <Modified>2024-08-14T23:09:25.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <Modified>2024-08-14T23:09:25.332</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <Modified>2024-08-14T23:09:25.332</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <Modified>2024-08-14T23:09:25.333</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <Modified>2024-08-14T23:09:25.333</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\renee\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.214.1843.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.214.1843.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\renee\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\renee\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.214.1843.0</Version>
+      <Architecture>win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.214.1843.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\renee\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\renee\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.214.1843.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.214.1843.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\renee\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\renee\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.214.1843.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.214.1843.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\renee\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

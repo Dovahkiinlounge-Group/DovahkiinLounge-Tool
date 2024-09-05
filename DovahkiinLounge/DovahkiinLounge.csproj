@@ -106,7 +106,6 @@
     <ProjectReference Include="..\AltoHttp\AltoHttp.csproj" />
     <ProjectReference Include="..\DovahkiinLounge.Functions\DovahkiinLounge.Functions.csproj" />
     <ProjectReference Include="..\DovahkiinLounge.Lang\DovahkiinLounge.Lang.csproj" />
-    <ProjectReference Include="..\xCheats Launcher\DovahkiinLounge Launcher.csproj" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

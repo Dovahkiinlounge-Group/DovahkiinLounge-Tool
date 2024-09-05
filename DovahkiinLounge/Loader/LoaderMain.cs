@@ -23,18 +23,20 @@ using System.Threading.Tasks;
 using System.IO.Pipes;
 using System.Text;
 using System.Globalization;
-using xCheats_Launcher;
 using System.Resources;
+using Newtonsoft.Json;
+using System.Net.Http;
 namespace xCheats
 {
     public partial class LoaderMain : Form
     {
         private Timer timer;
         CultureInfo lang = CultureInfo.CurrentCulture;
-        ResourceManager rm = new ResourceManager("xCheats.Lang.Lang", typeof(LoaderMain).Assembly);
+        ResourceManager rm = new ResourceManager("DovahkiinLounge.Lang.Lang", typeof(LoaderMain).Assembly);
         static string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         static string appFolderPath = Path.Combine(appDataPath, "DovahkiinLounge Group", "xCheats");
         static string configFilePath = Path.Combine(appFolderPath, "Config\\config.ini");
+        private const string ApiUrl = "http://localhost:5000/api/version/check"; // Replace with your actual API URL
         IniConfig config = new IniConfig();
         bool ProcOpen = false;
         [DllImport("kernel32.dll")]
@@ -53,7 +55,7 @@ namespace xCheats
             var handle = GetConsoleWindow();
             ShowWindow(handle, SW_HIDE);
             Console.WriteLine(rm.GetString("welcomeConsole", lang));
-            
+
             Version assemblyVersion = typeof(LoaderMain).Assembly.GetName().Version;
             Version truncatedVersion = new Version(assemblyVersion.Major, assemblyVersion.Minor, assemblyVersion.Build);
             string AV = string.Format("{0}.{1}.{2}", truncatedVersion.Major, truncatedVersion.Minor, truncatedVersion.Build.ToString("D"));
@@ -165,7 +167,7 @@ namespace xCheats
                         timer.Stop();
                         Console.WriteLine(rm.GetString("DovahmemDLLF", lang));
                         this.Size = new Size(534, 289);
-                        
+
                     }
                 }
             };
@@ -187,8 +189,6 @@ namespace xCheats
             {
 
             }
-            
-
         }
 
         private void MoneyCheat_CheckedChanged(object sender, EventArgs e)
@@ -310,6 +310,54 @@ namespace xCheats
         private void TmpCleaner_Click(object sender, EventArgs e)
         {
             x.CleanTempFolder(Path.GetTempPath());
+        }
+
+        private void AppVer_Click(object sender, EventArgs e)
+        {
+            CheckForUpdateAsync();
+        }
+
+        private async Task CheckForUpdateAsync()
+        {
+            try
+            {
+                Version assemblyVersion = typeof(LoaderMain).Assembly.GetName().Version;
+                Version truncatedVersion = new Version(assemblyVersion.Major, assemblyVersion.Minor, assemblyVersion.Build);
+                string AV = string.Format("{0}.{1}.{2}", truncatedVersion.Major, truncatedVersion.Minor, truncatedVersion.Build.ToString("D"));
+                var currentVersion = AV; // Replace with your current app version
+
+                using (HttpClient client = new HttpClient())
+                {
+                    var requestBody = new { CurrentVersion = currentVersion };
+                    var content = new StringContent(JsonConvert.SerializeObject(requestBody), Encoding.UTF8, "application/json");
+
+                    HttpResponseMessage response = await client.PostAsync(ApiUrl, content);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var responseBody = await response.Content.ReadAsStringAsync();
+                        dynamic result = JsonConvert.DeserializeObject(responseBody);
+
+                        if (result.updateAvailable == true)
+                        {
+                            MessageBox.Show($"Update available! Latest version is {result.latestVersion} u have {AV}", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            // Optionally, handle download and update process here
+                        }
+                        else
+                        {
+                            MessageBox.Show("You are already using the latest version.", "No Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to check for updates.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while checking for updates: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

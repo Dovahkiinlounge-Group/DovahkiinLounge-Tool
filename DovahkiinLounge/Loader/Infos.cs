@@ -27,7 +27,7 @@ namespace xCheats.Loader
     {
 
         CultureInfo lang = CultureInfo.CurrentCulture;
-        ResourceManager rm = new ResourceManager("xCheats.Lang.Lang", typeof(Infos).Assembly);
+        ResourceManager rm = new ResourceManager("DovahkiinLounge.Lang.Lang", typeof(Infos).Assembly);
         static string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         static string appFolderPath = Path.Combine(appDataPath, "DovahkiinLounge Group", "xCheats");
         static string configFilePath = Path.Combine(appFolderPath, "Config\\config.ini");

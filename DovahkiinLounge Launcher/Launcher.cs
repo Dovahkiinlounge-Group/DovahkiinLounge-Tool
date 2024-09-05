@@ -125,7 +125,7 @@ namespace xCheats_Launcher
         {
             config.Load(configFilePath);
             string arguments = "-u6sq8#bhysa68@1c0&$";
-            string mainAppPath = Path.Combine(Environment.CurrentDirectory, "xCheats.exe");
+            string mainAppPath = Path.Combine(Environment.CurrentDirectory, "DovahkiinLounge.exe");
 
             Process proc = new Process();
             proc.StartInfo.FileName = mainAppPath;

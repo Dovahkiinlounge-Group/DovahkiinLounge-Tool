@@ -1,0 +1,265 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge\\DovahkiinLounge.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\AltoHttp\\AltoHttp.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\AltoHttp\\AltoHttp.csproj",
+        "projectName": "AltoHttp",
+        "projectPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\AltoHttp\\AltoHttp.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Functions\\DovahkiinLounge.Functions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Functions\\DovahkiinLounge.Functions.csproj",
+        "projectName": "DovahkiinLounge.Functions",
+        "projectPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Functions\\DovahkiinLounge.Functions.csproj",
+        "packagesPath": "C:\\Users\\renee\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Functions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Programs\\Visual Studio Tools\\2022 Community\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\renee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Management": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Lang\\DovahkiinLounge.Lang.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Lang\\DovahkiinLounge.Lang.csproj",
+        "projectName": "DovahkiinLounge.Lang",
+        "projectPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Lang\\DovahkiinLounge.Lang.csproj",
+        "packagesPath": "C:\\Users\\renee\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Lang\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Programs\\Visual Studio Tools\\2022 Community\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\renee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge\\DovahkiinLounge.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge\\DovahkiinLounge.csproj",
+        "projectName": "DovahkiinLounge",
+        "projectPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge\\DovahkiinLounge.csproj",
+        "packagesPath": "C:\\Users\\renee\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Programs\\Visual Studio Tools\\2022 Community\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\renee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows8.0": {
+            "targetAlias": "net8.0-windows8.0",
+            "projectReferences": {
+              "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\AltoHttp\\AltoHttp.csproj": {
+                "projectPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\AltoHttp\\AltoHttp.csproj"
+              },
+              "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Functions\\DovahkiinLounge.Functions.csproj": {
+                "projectPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Functions\\DovahkiinLounge.Functions.csproj"
+              },
+              "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Lang\\DovahkiinLounge.Lang.csproj": {
+                "projectPath": "C:\\Users\\renee\\source\\repos\\Dovahkiinlounge-Group\\DovahkiinLounge-Tool\\DovahkiinLounge.Lang\\DovahkiinLounge.Lang.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows8.0": {
+          "targetAlias": "net8.0-windows8.0",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Siticone.Desktop.UI": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Zeroit.Framework.LollipopControls": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

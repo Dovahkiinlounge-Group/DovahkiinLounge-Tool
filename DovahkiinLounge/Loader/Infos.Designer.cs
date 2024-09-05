@@ -151,7 +151,6 @@
             // 
             // DevBDGA
             // 
-            DevBDGA.Enabled = false;
             DevBDGA.Font = new Font("Arial Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DevBDGA.ForeColor = Color.Magenta;
             DevBDGA.Location = new Point(172, 268);
@@ -161,11 +160,9 @@
             DevBDGA.Size = new Size(242, 23);
             DevBDGA.TabIndex = 48;
             DevBDGA.Text = "API Service:";
-            DevBDGA.Visible = false;
             // 
             // DevBDGC
             // 
-            DevBDGC.Enabled = false;
             DevBDGC.Font = new Font("Arial Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DevBDGC.ForeColor = Color.Magenta;
             DevBDGC.Location = new Point(172, 80);
@@ -175,11 +172,9 @@
             DevBDGC.Size = new Size(242, 23);
             DevBDGC.TabIndex = 47;
             DevBDGC.Text = "Core System Development:";
-            DevBDGC.Visible = false;
             // 
             // GLName2
             // 
-            GLName2.Enabled = false;
             GLName2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold);
             GLName2.ForeColor = Color.White;
             GLName2.Location = new Point(172, 317);
@@ -189,11 +184,9 @@
             GLName2.Size = new Size(237, 25);
             GLName2.TabIndex = 46;
             GLName2.Text = "Name: ";
-            GLName2.Visible = false;
             // 
             // GLName
             // 
-            GLName.Enabled = false;
             GLName.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold);
             GLName.ForeColor = Color.White;
             GLName.Location = new Point(172, 129);
@@ -203,7 +196,6 @@
             GLName.Size = new Size(237, 23);
             GLName.TabIndex = 45;
             GLName.Text = "Name: ";
-            GLName.Visible = false;
             // 
             // label4
             // 
@@ -219,7 +211,6 @@
             // 
             // DCName2
             // 
-            DCName2.Enabled = false;
             DCName2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold);
             DCName2.ForeColor = Color.White;
             DCName2.Location = new Point(172, 342);
@@ -228,13 +219,11 @@
             DCName2.Size = new Size(237, 28);
             DCName2.TabIndex = 38;
             DCName2.Text = "Discord-Name: ???";
-            DCName2.Visible = false;
             // 
             // DCAV2
             // 
             DCAV2.BackgroundImageLayout = ImageLayout.Stretch;
             DCAV2.BorderStyle = BorderStyle.FixedSingle;
-            DCAV2.Enabled = false;
             DCAV2.ErrorImage = null;
             DCAV2.InitialImage = null;
             DCAV2.Location = new Point(9, 241);
@@ -244,11 +233,9 @@
             DCAV2.SizeMode = PictureBoxSizeMode.StretchImage;
             DCAV2.TabIndex = 37;
             DCAV2.TabStop = false;
-            DCAV2.Visible = false;
             // 
             // DCName
             // 
-            DCName.Enabled = false;
             DCName.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DCName.ForeColor = Color.White;
             DCName.Location = new Point(172, 152);
@@ -258,13 +245,11 @@
             DCName.Size = new Size(237, 28);
             DCName.TabIndex = 36;
             DCName.Text = "Discord-Name:";
-            DCName.Visible = false;
             // 
             // DCAV1
             // 
             DCAV1.BackgroundImageLayout = ImageLayout.Stretch;
             DCAV1.BorderStyle = BorderStyle.FixedSingle;
-            DCAV1.Enabled = false;
             DCAV1.ErrorImage = null;
             DCAV1.InitialImage = null;
             DCAV1.Location = new Point(9, 53);
@@ -274,7 +259,6 @@
             DCAV1.SizeMode = PictureBoxSizeMode.StretchImage;
             DCAV1.TabIndex = 35;
             DCAV1.TabStop = false;
-            DCAV1.Visible = false;
             // 
             // Settings
             // 

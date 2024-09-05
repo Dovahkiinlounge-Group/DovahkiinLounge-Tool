@@ -89,6 +89,7 @@ namespace xCheats
             xCheats.BackColor = Color.Transparent;
             xCheats.DrawMode = DrawMode.OwnerDrawFixed;
             xCheats.DropDownStyle = ComboBoxStyle.DropDownList;
+            xCheats.Enabled = false;
             xCheats.FillColor = Color.Black;
             xCheats.FocusedColor = Color.FromArgb(94, 148, 255);
             xCheats.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -137,12 +138,13 @@ namespace xCheats
             xCheatsBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             xCheatsBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             xCheatsBtn.Dock = DockStyle.Bottom;
+            xCheatsBtn.Enabled = false;
             xCheatsBtn.FillColor = Color.Transparent;
             xCheatsBtn.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             xCheatsBtn.ForeColor = Color.White;
             xCheatsBtn.HoverState.FillColor = Color.Transparent;
             xCheatsBtn.HoverState.ForeColor = Color.Green;
-            xCheatsBtn.Location = new Point(0, 350);
+            xCheatsBtn.Location = new Point(0, 240);
             xCheatsBtn.Margin = new Padding(4);
             xCheatsBtn.Name = "xCheatsBtn";
             xCheatsBtn.Size = new Size(534, 52);
@@ -183,6 +185,7 @@ namespace xCheats
             AppVer.Size = new Size(72, 15);
             AppVer.TabIndex = 17;
             AppVer.Text = "Version: ?.?.?";
+            AppVer.Click += AppVer_Click;
             // 
             // BWO
             // 
@@ -262,6 +265,7 @@ namespace xCheats
             // Admincheck
             // 
             Admincheck.AutoSize = true;
+            Admincheck.Enabled = false;
             Admincheck.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Admincheck.ForeColor = Color.Magenta;
             Admincheck.Location = new Point(72, 322);
@@ -394,7 +398,8 @@ namespace xCheats
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(534, 402);
+            ClientSize = new Size(534, 292);
+            Controls.Add(AppVer);
             Controls.Add(xCheats);
             Controls.Add(RDOLobby);
             Controls.Add(Admincheck);
@@ -402,7 +407,6 @@ namespace xCheats
             Controls.Add(UpdateImg);
             Controls.Add(OnImg);
             Controls.Add(Checking);
-            Controls.Add(AppVer);
             Controls.Add(Infos);
             Controls.Add(MoneyCheat);
             Controls.Add(xCheatsBtn);

@@ -1,0 +1,1 @@
+C:\Users\renee\source\repos\Dovahkiinlounge-Group\DovahkiinLounge-Tool\DovahiinLounge.Launcher.v2\DovahiinLounge.Launcher.v2.csproj;x64

@@ -37,7 +37,7 @@ namespace xCheats.Calls
 
         public static void startup()
         {
-            Console.WriteLine("Initializing xCheats...");
+            Console.WriteLine($"Initializing {Infostrings.PName}...");
 
             if (GS.IsOfflineMode)
             {
@@ -45,7 +45,7 @@ namespace xCheats.Calls
                 Thread.Sleep(2000);
                 Console.WriteLine("Checking Version: Disabled in Settings");
                 Thread.Sleep(2000);
-                Console.WriteLine("Starting xCheats...");
+                Console.WriteLine($"Starting {Infostrings.PName}...");
                 Thread.Sleep(2000);
                 Application.Run(new LoaderMain());
             }
@@ -81,13 +81,13 @@ namespace xCheats.Calls
                 Thread.Sleep(500);
                 Console.WriteLine("Checking Stored LobbyCode for RDO...");
                 Thread.Sleep(1000);
-                WriteColoredLine($"Stored LobbyCode for RDO: {(string.IsNullOrEmpty(GS.LobbyCode) ? "Not Found" : GS.LobbyCode)}", !string.IsNullOrEmpty(GS.LobbyCode));
+                WriteColoredLine($"Stored LobbyCode for RDO: {(string.IsNullOrEmpty(GS.LobbyCode) ? "Not Set" : GS.LobbyCode)}", !string.IsNullOrEmpty(GS.LobbyCode));
                 Thread.Sleep(500);
                 Console.WriteLine("Checking RDR install Path...");
                 Thread.Sleep(1000);
-                WriteColoredLine($"RDR install Path: {(string.IsNullOrEmpty(GS.SelectedInstallPath) ? "Not Found" : GS.SelectedInstallPath)}", !string.IsNullOrEmpty(GS.SelectedInstallPath));
+                WriteColoredLine($"RDR install Path: {(string.IsNullOrEmpty(GS.SelectedInstallPath) ? "Not Set" : GS.SelectedInstallPath)}", !string.IsNullOrEmpty(GS.SelectedInstallPath));
                 Thread.Sleep(500);
-                Console.WriteLine("Starting xCheats...");
+                Console.WriteLine($"Starting {Infostrings.PName}...");
                 Thread.Sleep(1000);
                 Application.Run(new LoaderMain());
             }

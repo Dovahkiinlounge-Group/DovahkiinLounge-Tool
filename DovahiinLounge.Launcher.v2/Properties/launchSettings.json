@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DovahiinLounge.Launcher.v2 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DovahiinLounge.Launcher.v2 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
