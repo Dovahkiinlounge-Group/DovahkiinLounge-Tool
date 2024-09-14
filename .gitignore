@@ -14,3 +14,6 @@
 /DovahkiinLounge Launcher/obj
 /AltoHttp/bin/Debug
 /Updater/Updater.cs
+/DovahkiinLounge/obj/Release/net8.0-windows8.0/DovahkiinLounge.dll
+/DovahkiinLounge/obj/Release/net8.0-windows8.0/de/DovahkiinLounge.resources.dll
+/DovahkiinLounge/obj/Release/net8.0-windows8.0/DovahkiinLounge.csproj.AssemblyReference.cache
