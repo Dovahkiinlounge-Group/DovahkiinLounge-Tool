@@ -11,6 +11,7 @@ using System.Linq;
 using CC = xCheats.Calls;
 using DovahkiinLounge.Functions;
 using System.Runtime.CompilerServices;
+using static xCheats.Calls.API;
 
 namespace xCheats
 {
@@ -28,6 +29,7 @@ namespace xCheats
         [STAThread]
         static void Main(string[] args)
         {
+           
             try
             {
                 // Customize the console appearance

@@ -36,7 +36,7 @@ namespace xCheats
         static string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         static string appFolderPath = Path.Combine(appDataPath, "DovahkiinLounge Group", "xCheats");
         static string configFilePath = Path.Combine(appFolderPath, "Config\\config.ini");
-        private const string ApiUrl = "http://localhost:5000/api/version/check"; // Replace with your actual API URL
+        private const string ApiUrl = "https://api.dovahkiinlounge.de/"; // Replace with your actual API URL
         IniConfig config = new IniConfig();
         bool ProcOpen = false;
         [DllImport("kernel32.dll")]
@@ -316,22 +316,25 @@ namespace xCheats
         {
             CheckForUpdateAsync();
         }
-
         private async Task CheckForUpdateAsync()
         {
             try
             {
+                // Retrieve the current version from the assembly
                 Version assemblyVersion = typeof(LoaderMain).Assembly.GetName().Version;
                 Version truncatedVersion = new Version(assemblyVersion.Major, assemblyVersion.Minor, assemblyVersion.Build);
-                string AV = string.Format("{0}.{1}.{2}", truncatedVersion.Major, truncatedVersion.Minor, truncatedVersion.Build.ToString("D"));
-                var currentVersion = AV; // Replace with your current app version
+                string currentVersion = $"{truncatedVersion.Major}.{truncatedVersion.Minor}.{truncatedVersion.Build:D}";
+
+                // Replace with your API URL
+                string apiUrl = "https://api.dovahkiinlounge.de/check";
 
                 using (HttpClient client = new HttpClient())
                 {
-                    var requestBody = new { CurrentVersion = currentVersion };
+                    // Assume your app ID is 1; replace with the actual app ID if needed
+                    var requestBody = new { AppId = 1, CurrentVersion = currentVersion };
                     var content = new StringContent(JsonConvert.SerializeObject(requestBody), Encoding.UTF8, "application/json");
 
-                    HttpResponseMessage response = await client.PostAsync(ApiUrl, content);
+                    HttpResponseMessage response = await client.PostAsync(apiUrl, content);
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -340,8 +343,10 @@ namespace xCheats
 
                         if (result.updateAvailable == true)
                         {
-                            MessageBox.Show($"Update available! Latest version is {result.latestVersion} u have {AV}", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show($"Update available! Latest version is {result.latestVersion}. You have {currentVersion}.", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             // Optionally, handle download and update process here
+                            string downloadUrl = (string)result.downloadUrl;
+                            // For example: await DownloadLatestSetup(downloadUrl);
                         }
                         else
                         {
@@ -350,14 +355,23 @@ namespace xCheats
                     }
                     else
                     {
-                        MessageBox.Show("Failed to check for updates.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"Failed to check for updates. Status Code: {response.StatusCode}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
+            catch (HttpRequestException httpEx)
+            {
+                MessageBox.Show($"Request error: {httpEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (JsonException jsonEx)
+            {
+                MessageBox.Show($"Error processing JSON: {jsonEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred while checking for updates: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
 }
+    

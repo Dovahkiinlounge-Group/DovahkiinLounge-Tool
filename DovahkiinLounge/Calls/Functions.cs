@@ -14,6 +14,9 @@ using Microsoft.Win32;
 using System.Reflection;
 using DovahkiinLounge.Functions;
 using System.Configuration;
+using Newtonsoft.Json;
+using System.Net.Http;
+using System.Text;
 
 namespace xCheats.Calls
 {
@@ -63,6 +66,8 @@ namespace xCheats.Calls
                 Thread.Sleep(1000);
                 WriteColoredLine($"Connection: {(reply.Status == IPStatus.Success ? "Established" : "Not Established")}", reply.Status == IPStatus.Success);
                 Thread.Sleep(500);
+                CheckForUpdate();
+                Thread.Sleep(1000);
                 Console.WriteLine("Checking Administrator Privileges...");
                 Thread.Sleep(1000);
                 WriteColoredLine($"Administrator Privileges: {(GS.AdminMode ? "Enabled" : "Disabled")}", GS.AdminMode);
@@ -93,76 +98,131 @@ namespace xCheats.Calls
             }
         }
 
-        private static void WriteColoredLine(string message, bool condition)
-        {
-            int colonIndex = message.IndexOf(':');
-            if (colonIndex != -1)
-            {
-                string prefix = message.Substring(0, colonIndex + 1);
-                string status = message.Substring(colonIndex + 1).Trim();
-
-                Console.Write(prefix + " ");
-                Console.ForegroundColor = condition ? ConsoleColor.Green : ConsoleColor.Red;
-                Console.WriteLine(status);
-                Console.ResetColor();
-            }
-            else
-            {
-                Console.WriteLine(message);
-            }
-        }
-
-        public static void CleanTempFolder(string folderPath)
+        private static void CheckForUpdate()
         {
             try
             {
-                DirectoryInfo tempDir = new DirectoryInfo(folderPath);
-
-                foreach (FileInfo file in tempDir.GetFiles())
+                using (var client = new HttpClient())
                 {
-                    try
+                    // Retrieve the current version from the assembly
+                    Version assemblyVersion = typeof(Program).Assembly.GetName().Version;
+                    Version truncatedVersion = new Version(assemblyVersion.Major, assemblyVersion.Minor, assemblyVersion.Build);
+                    string currentVersion = $"{truncatedVersion.Major}.{truncatedVersion.Minor}.{truncatedVersion.Build:D}";
+
+                    // Replace with your API URL
+                    string apiUrl = "https://api.dovahkiinlounge.de/check";
+
+                    var requestBody = new { AppId = 1, CurrentVersion = currentVersion };
+                    var content = new StringContent(JsonConvert.SerializeObject(requestBody), Encoding.UTF8, "application/json");
+
+                    HttpResponseMessage response = client.PostAsync(apiUrl, content).Result; // Synchronous call
+
+                    if (response.IsSuccessStatusCode)
                     {
-                        file.Delete();
+                        var responseBody = response.Content.ReadAsStringAsync().Result; // Synchronous call
+                        dynamic result = JsonConvert.DeserializeObject(responseBody);
+
+                        bool updateAvailable = result.updateAvailable;
+                        string latestVersion = result.latestVersion;
+
+                        BuildAndPrintMessage(updateAvailable, currentVersion, latestVersion);
                     }
-                    catch (Exception)
+                    else
                     {
-                        // Handle exceptions if needed
+                        Console.WriteLine($"Failed to check for updates. Status Code: {response.StatusCode}");
                     }
                 }
-
-                foreach (DirectoryInfo dir in tempDir.GetDirectories())
-                {
-                    try
-                    {
-                        dir.Delete(true);
-                    }
-                    catch (Exception)
-                    {
-                        // Handle exceptions if needed
-                    }
-                }
-
-                // Optionally, you can indicate the completion of the operation here.
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // Handle exceptions if needed
+                Console.WriteLine($"An error occurred while checking for updates: {ex.Message}");
             }
         }
-        public static void hide()
-        {
 
-            if (GlobalSettings.ConsoleHideFunction)
+        private static void BuildAndPrintMessage(bool updateAvailable, string currentVersion, string latestVersion)
+        {
+            if (updateAvailable)
             {
-                var handle = GetConsoleWindow();
-                ShowWindow(handle, SW_HIDE);
-                Console.Clear();
+                Console.WriteLine($"Update available! Latest version is {latestVersion}, You have {currentVersion}.");
             }
             else
             {
-
+                Console.WriteLine("You are already using the latest version.");
             }
         }
+    
+
+
+    private static void WriteColoredLine(string message, bool condition)
+    {
+        int colonIndex = message.IndexOf(':');
+        if (colonIndex != -1)
+        {
+            string prefix = message.Substring(0, colonIndex + 1);
+            string status = message.Substring(colonIndex + 1).Trim();
+
+            Console.Write(prefix + " ");
+            Console.ForegroundColor = condition ? ConsoleColor.Green : ConsoleColor.Red;
+            Console.WriteLine(status);
+            Console.ResetColor();
+        }
+        else
+        {
+            Console.WriteLine(message);
+        }
     }
+
+    public static void CleanTempFolder(string folderPath)
+    {
+        try
+        {
+            DirectoryInfo tempDir = new DirectoryInfo(folderPath);
+
+            foreach (FileInfo file in tempDir.GetFiles())
+            {
+                try
+                {
+                    file.Delete();
+                }
+                catch (Exception)
+                {
+                    // Handle exceptions if needed
+                }
+            }
+
+            foreach (DirectoryInfo dir in tempDir.GetDirectories())
+            {
+                try
+                {
+                    dir.Delete(true);
+                }
+                catch (Exception)
+                {
+                    // Handle exceptions if needed
+                }
+            }
+
+            // Optionally, you can indicate the completion of the operation here.
+        }
+        catch (Exception)
+        {
+            // Handle exceptions if needed
+        }
+    }
+    public static void hide()
+    {
+
+        if (GlobalSettings.ConsoleHideFunction)
+        {
+            var handle = GetConsoleWindow();
+            ShowWindow(handle, SW_HIDE);
+            Console.Clear();
+        }
+        else
+        {
+
+        }
+    }
+}
 
 }
